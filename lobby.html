@@ -1,0 +1,31 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>p2pVideoChat</title>
+    <link rel = "stylesheet" href = "lobby.css">
+</head>
+<body>
+    <div id = "lobby-container">
+        <div id = "form-header">
+            Create Or Join a Room
+        </div>
+        <div id = "form-body">
+
+         <form id = "joinRoomForm" >
+            <input type = "text" id = "roomId" name = "roomId">
+            <input type = "submit" value = "Join Room">
+         </form>  
+        </div>
+    </div>
+  
+</body>
+<script>
+    document.getElementById('joinRoomForm').addEventListener("submit",(e) => {
+        e.preventDefault()
+        let roomId = document.getElementById('roomId').value 
+        window.location = `index.html?room=${roomId}`
+    })
+</script>
+</html>

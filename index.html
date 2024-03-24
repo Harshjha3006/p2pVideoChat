@@ -1,0 +1,33 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>p2pVideoChat</title>
+    <link rel = "stylesheet" href = "style.css">
+</head>
+<body>
+    <div id = "videos">
+        <video id = "user-1" class = "video" autoplay playsinline></video>
+        <video id = "user-2" class = "video" autoplay playsinline></video>
+
+    </div>
+
+    <div id = "controls">
+        <div class = "video-controls"  id = "cameraBtn">
+            <img src = "icons/camera.png">
+        </div>
+        <div class = "video-controls" id = "micBtn" >
+            <img src = "icons/mic.png"/>
+        </div>
+        <a href = "lobby.html">
+        <div class = "video-controls" id = "leaveBtn">
+            <img  src = "icons/phone.png"/>
+        </div>
+    </a>
+    </div>
+    
+</body>
+<script src = "agora-rtm-sdk-1.5.1.js"></script>
+<script src = "main.js"></script>
+</html>
